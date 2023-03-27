@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KeyCode Finder</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #4caf50;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 50px auto;
+            text-align: center;
+        }
+        
+        .result {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        .card-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-around;
+            gap: 10px;
+            /* border: 1px solid red; */
+        }
+        
+        .card-header {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: white;
+            background-color: #4caf50;
+        }
+        
+        .card {
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: calc((100% - 20px) / 6);
+            /* border: 1px solid blueviolet; */
+        }
+        
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 230px;
+            /* border: 1px solid palevioletred; */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>KeyCode Finder</h1>
+    </header>
+    <main>
+        <div class="result" id="result">Press any key</div>
+        <div class="card-container" id="output"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
